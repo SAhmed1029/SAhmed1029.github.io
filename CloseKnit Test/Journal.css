@@ -1,0 +1,96 @@
+.manage-layout {
+    display: flex;
+}
+
+.manage-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Journal Entry Styles */
+.journal-entry-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.journal-prompt {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.journal-entry-content {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1.5rem;
+    min-height: 200px;
+}
+
+.journal-body {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    margin: 0;
+}
+
+.journal-textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.journal-textarea:focus {
+    outline: none;
+    border-color: #7c3aed;
+}
+
+.journal-entry-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.journal-btn {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #6d28d9;
+}
+
+.save-btn {
+    background-color: #10b981;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #059669;
+}

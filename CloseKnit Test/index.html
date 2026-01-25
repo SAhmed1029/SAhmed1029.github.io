@@ -70,7 +70,7 @@
             position: fixed;
             bottom: 0;
             left: calc(50% + 100px);
-            transform: translateX(-50%);
+            transform: translateX(-50%) translateY(calc(100% - 50px));
             width: min(800px, calc(100% - 240px));
             background-color: white;
             border-top: 1px solid #e5e5e5;
@@ -78,6 +78,7 @@
             max-height: 500px;
             display: flex;
             flex-direction: column;
+            transition: transform 0.3s ease;
         }
 
         .comment-section.expanded {
@@ -254,7 +255,7 @@
                 Comments
                 <span class="comment-count" id="comment-count">0</span>
             </h3>
-            <span class="arrow-icon">&#9650;</span>
+            <span class="arrow-icon">&#9660;</span>
         </div>
         <div class="comment-body">
             <div class="comment-list" id="comment-list">

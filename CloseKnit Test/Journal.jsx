@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Journal.css'
 import Header from "../../components/Header/Header"
 import Navbar from '../../components/Navbar/Navbar';
@@ -39,7 +40,9 @@ function Journal(props) {
                         <ul className="journal-entries-list">
                             {filteredEntries.map((entry) => (
                                 <li key={entry.id} className="journal-entry-item">
-                                    {entry.title}
+                                    <Link to={`/journal/entry/${entry.id}`}>
+                                        {entry.title}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
